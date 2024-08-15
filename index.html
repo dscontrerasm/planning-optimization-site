@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning Optimization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Website for Planning Optimization</h1>
+
+    <div class="button-container">
+        <button onclick="downloadPackagingPlan()">Download Packaging Plan (Excel)</button>
+        <button onclick="downloadBrewingPlan()">Download Brewing Plan (Excel)</button>
+        <button onclick="showPlanAttainment()">Show Plan Attainment</button>
+        <button onclick="showCostImpact()">Show Cost Impact</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
