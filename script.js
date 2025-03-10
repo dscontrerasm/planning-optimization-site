@@ -24,6 +24,6 @@ function showCostImpact() {
 
 function showPlanOnline() {
     // Redirect to the plan page
-    window.location.href = 'plan.html';
+    window.location.href = 'Plan.html';
 }
 
