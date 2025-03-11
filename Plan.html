@@ -3,20 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plan Online</title>
+    <title>Plan Table</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin: 20px;
-        }
         table {
-            border-collapse: collapse;
             width: 100%;
-            max-width: 1200px;
+            border-collapse: collapse;
         }
         th, td {
             border: 1px solid black;
@@ -24,49 +15,15 @@
             text-align: center;
         }
         th {
-            background-color: #333;
-            color: white;
+            background-color: lightgray;
         }
-        .highlight-red { background-color: red; color: white; }
-        .highlight-green { background-color: green; color: white; }
-        .highlight-yellow { background-color: yellow; }
-        .highlight-blue { background-color: lightblue; }
     </style>
 </head>
 <body>
+
     <h1>Plan Online</h1>
-    <table>
-        <tr>
-            <th>Marca</th>
-            <th>FV</th>
-            <th>SV Destino</th>
-            <th>VOL. FV (HI HG)</th>
-            <th>INICIO FV</th>
-            <th>Horas parada</th>
-            <th>Fecha Planeada INICIO OPERACIÓN</th>
-            <th>Fecha Planeada FIN OPERACIÓN</th>
-            <th>TSV</th>
-            <th>TFV</th>
-            <th>FECHA ENVASE</th>
-            <th>Notas</th>
-        </tr>
-        <tr>
-            <td class="highlight-green">ESTANDAR</td>
-            <td class="highlight-red">FV17</td>
-            <td>sv12</td>
-            <td>5,400</td>
-            <td>2/03/2025 15:35</td>
-            <td>59</td>
-            <td class="highlight-blue">09/03/2025 16:30</td>
-            <td class="highlight-blue">10/03/2025 01:30</td>
-            <td class="highlight-red">2,52</td>
-            <td class="highlight-green">7,0</td>
-            <td>12/03/2025 14:00</td>
-            <td class="highlight-red">Se debe trasegar este FV antes del FV06 por disponibilidad de madurador y necesidad de Estándar para el Envase</td>
-        </tr>
-        <!-- Add more rows as needed -->
-    </table>
-    <br>
-    <a href="index.html">Back to Home</a>
+    <table id="planTable"></table>  <!-- Empty table -->
+
+    <script src="script.js"></script> <!-- Ensure script is linked -->
 </body>
 </html>
