@@ -34,3 +34,24 @@ const planData = [
     ["CORONA", "FV06", "sv05", "5,400", "18/02/2025 17:53", "", "10/03/2025 12:30", "10/03/2025 12:30", "3,73", "19,4", "14/03/2025 06:00", ""],
     ["ESTANDAR", "FV01", "sv16", "5,400", "3/03/2025 7:52", "", "10/03/2025 23:30", "10/03/2025 22:00", "2,94", "7,3", "13/03/2025 22:00", ""]
 ];
+
+
+function populateTable() {
+    const table = document.getElementById("planTable");
+
+    // Loop through planData array and create table rows
+    planData.forEach((rowData, rowIndex) => {
+        let row = document.createElement("tr");
+
+        rowData.forEach((cellData) => {
+            let cell = rowIndex === 0 ? document.createElement("th") : document.createElement("td");
+            cell.innerText = cellData;
+            row.appendChild(cell);
+        });
+
+        table.appendChild(row);
+    });
+}
+
+// Run function when the page loads
+document.addEventListener("DOMContentLoaded", populateTable);
